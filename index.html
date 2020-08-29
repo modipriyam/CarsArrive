@@ -1,0 +1,80 @@
+
+<html>
+<body>
+
+
+<head>
+	<!-- Including Bootstrap Classes -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+
+<!-- Navigation Section -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+	  <div class="container">
+	    <a class="navbar-brand" href="index.html">
+	          <img src="image/icon.png" width="60" height="60" alt="">
+	    </a>
+	    <div class="collapse navbar-collapse" id="navbarResponsive">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item active">
+	          <a class="nav-link" href="index.html">Home
+	                <span class="sr-only">(current)</span>
+	              </a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+<!-- Main Container Section -->
+	<div class="container">
+	<br><br>
+
+	<blockquote class="blockquote">
+	  <p class="mb-0">Welcome to Online Car Auction ! Buy and Sell Smarter with Interactive Insights</p>
+	</blockquote>
+
+	<!-- Search Car with Model Name -->
+    <div class="card card-body">
+        <input id="search-input" class="form-control" type="text" placeholder="Enter Car Model You Are Looking For !! " >
+    </div>
+
+    <br><br>
+
+<!-- Iterating Vehicles Details and Priting to Table -->
+    <table class="table table-striped">
+         <thead class="thead-dark">
+            <tr  class="bg-info">
+                <th data-colname="vehicalID" data-order="desc">Sr No. </th>
+                <th data-colname="vehicalPhoto" data-order="desc">Photo</th>
+                <th data-colname="VehicleMake" data-order="desc">Manufacture</th>
+                <th data-colname="VehicleModel" data-order="desc">Model</th>
+                <th data-colname="VehicleSubTrim" data-order="desc">Sub Trim</th>
+                <th data-colname="VehicleYear" data-order="desc">Year</th>
+                <th data-colname="Height" data-order="desc">Height</th>
+                <th data-colname="Width" data-order="desc">Width</th>
+                <th data-colname="Width" data-order="desc">Length</th>
+                <th data-colname="GroundClearance" data-order="desc">Ground Clearance</th>
+            </tr>
+
+        <tbody id="myTable">
+            
+        </tbody>
+
+    </table>
+
+    <script src="main.js"></script>
+
+</div>
+
+<!-- Footer Section-->
+
+<footer class="py-4 bg-dark text-white-50" class="fixed-bottom">
+    <div class="container text-center">
+      <small>Copyright &copy; KARGlobal Coding Challenge</small>
+    </div>
+</footer>
+  
+</body>
+</html>
